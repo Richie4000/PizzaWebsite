@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .desktop, print {
+            display: none;
+        }
+
+        @media print {
+            .mobile, desktop {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .mobile {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+            
+        }
+    </style>
+<body>
+    <div class="desktop">Desktop</div>
+    <div class="mobile">Mobile</div>
+    <div class="print">Print</div>    
+</body>
+</html>
