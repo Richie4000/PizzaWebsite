@@ -85,21 +85,6 @@ article {
 
 }
 
-@media only screen and (min-width: 768px) {
-
-    main {
-        display: flex;
-    }
-
-    aside {
-        margin-left: 2%;
-    }
-
-    .columns-desktop {
-        display: flex;
-    }
-
-}
 
 .user-account{
     position: fixed;
@@ -251,3 +236,32 @@ section{
  div .price{
     font-size: 2rem;
  }
+
+
+ @media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+ }
+
+ @media (max-width:768px){
+    
+    #menu-btn{
+        display: inline-block;
+    }
+ }
+ 
+ @media only screen and (min-width: 768px) {
+
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
+
+    .columns-desktop {
+        display: flex;
+    }
+}
