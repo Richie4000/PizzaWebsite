@@ -70,10 +70,12 @@ main {
 aside,
 article {
     padding: 2em;
+    top: 0;
+    left: 0;
 }
 
 aside {
-    text-align: center;
+    text-align: left;
 }
 
 article {
@@ -184,7 +186,7 @@ section{
     justify-content: center;
  }
  
- .menu .box-container .box{
+  .menu .box-container .box{
     background-color:#fff;
     border-radius: .5rem;
     padding:2rem;
@@ -238,18 +240,13 @@ section{
  }
 
 
- @media (max-width:991px) {
-    html{
-        font-size: 55%;
-    }
- }
-
  @media (max-width:768px){
     
     #menu-btn{
         display: inline-block;
     }
  }
+ 
  
  @media only screen and (min-width: 768px) {
 
