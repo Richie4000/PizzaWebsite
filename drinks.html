@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylie.css" type="text/css">
-
     <title>Drinks | Slice of Pie</title>
+    
 </head>
 <body>
     <header>
@@ -23,36 +23,60 @@
     <main><aside><img src="Since 1985.png" alt="Slice of Pie"></aside>
     <article>
 
-        <section class="columns-desktop">
-            <div class="cocacola">
+        <section id="menu" class="menu">
+        <div class="box container">
+
+            <div class="box">
+                <div class="price">£<span>1.50</span></div>
                 <img src="cocacola.jpg" alt="cocacola">
-                    <div class="title">Coca-Cola - 2 Litre</div>
-                    <div class="price">£1.50</div>
-                    <button data-order="cocacola">Add to Basket</button>
+                    <div class="name">Coca-Cola - 2 Litre</div>
+                    <form action="" method="post">
+                        <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+                    </form>
+                    </div>
 
-            <div class="fanta">
+            <div class="box">
+                <div class="price">£<span>1.50</span></div>
                 <img src="fanta.jpg" alt="fanta">
-                    <div class="title">Fanta Fruit Twist - 2 Litre</div>
-                    <div class="price">£1.50</div>
-                    <button data-order="fanta">Add to Basket</button>
-
-            <div class="smoothie">
+                        <div class="name">Fanta Fruit Twist - 2 Litre</div>
+                        <form action="" method="post">
+                            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+                        </form>
+                        </div>
+                    
+            <div class="box">
+                 <div class="price">£<span>1.50</span></div>
                 <img src="smoothie.jpg" alt="smoothie">
-                    <div class="title">Innocent Smoothie - 1 Litre</div>
-                    <div class="price">£1.50</div>
-                    <button data-order="smoothie">Add to Basket</button>
+                    <div class="name">Innocent Smoothie - 1 Litre</div>
+                    <form action="" method="post">
+                        <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+                    </form>
+                    </div>
 
-            <div class="vitaminwater">
+            <div class="box">
+                <div class="price">£<span>1</span></div>
                 <img src="vitaminwater.jpg" alt="vitaminwater">
-                    <div class="title">Vitamin Water - 1 Litre</div>
-                    <div class="price">£1.00</div>
-                    <button data-order="vitaminwater">Add to Basket</button>
+                    <div class="name">Vitamin Water - 1Litre</div>
+                    <form action="" method="post">
+                        <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+                    </form>
+                    </div>
 
-            <div class="water">
+            <div class="box">
+                <div class="price">£<span>1</span></div>
                 <img src="water.jpg" alt="water">
-                    <div class="title">Water - 2 Litre</div>
-                    <div class="price">£1.00</div>
-                    <button data-order="water">Add to Basket</button>       
+                    <div class="name">Water - 2Litre</div>
+                    <form action="" method="post">
+                        <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+                    </form>
+                    </div>
+                    
+                </section>
 
     <footer>
         <nav>

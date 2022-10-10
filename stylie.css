@@ -1,6 +1,11 @@
 * {
-    margin: 0;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2 linear;
 }
+
 
 html, 
 body {
@@ -95,3 +100,154 @@ article {
     }
 
 }
+
+.user-account{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1100;
+    background-color: var(--white);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.user-account #close-account{
+    text-align: right;
+    margin-bottom: 2rem;
+
+}
+
+.user-account #close-account span{
+    cursor: pointer;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.user-account #close-account span:hover{
+    color:var(--black);
+}
+
+.user-account .user{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: .5rem;
+}
+
+.user-account .user p{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.user-account .display-orders{
+    padding:1.5rem;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.user-account .display-orders p{
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+section{
+    padding:2rem;
+    margin: 0 auto;
+    max-width: 500px;
+
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color:#fff;
+    background-color: lightblue;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.btn:hover{
+    background-color:black;
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+ }
+ 
+ .menu .box-container .box{
+    background-color:#fff;
+    border-radius: .5rem;
+    padding:2rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+ }
+ 
+ .menu .box-container .box img{
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+ 
+ .menu .box-container .box .price{
+    background: color #333;
+    border-radius: .5rem;
+    padding:.5rem 1rem;
+    font-size: 1.7rem;
+    color:#fff;
+    position: absolute;
+    top:1rem; left:1rem;
+ }
+ 
+ .box-container .box .price span{
+    font-size: 2.5rem;
+ }
+ 
+ .box .name{
+    font-size: 2rem;
+    color:black;
+    margin:.5rem 0;
+ }
+ 
+ .box-container .box form{
+    display: flex;
+    gap:1rem;
+ }
+ 
+ .box-container .box form .qty{
+    width: 8rem;
+    border:1rem solid #666;
+    padding:1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color:#333;
+ }
+
+ div .price{
+    font-size: 2rem;
+ }
