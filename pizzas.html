@@ -11,6 +11,7 @@
     <header>
         <nav>
             <ul>
+                <!---Header-->
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="pizzas.html">Pizzas</a></li>
                 <li><a href="sides.html">Sides</a></li>
@@ -19,186 +20,230 @@
             </ul>
         </nav>
     </header>
-    <main><aside><img src="Since 1985.png" alt="Slice of Pie">
+    <!----This logo represents all the images on the page.-->
+    <main><aside><img src="images/Since 1985.png" alt="Slice of Pie">
     </aside>
     <article>
-        <section class="columns-desktop">
-            <div class="chicken">
-                <img src="chicken.jpg" alt="chicken">
-                <div class="columns">
-                    <div class="title">Basic Chicken </div>
-                    
+
+        <table>
+            <th>Small</th>
+            <th>Medium</th>
+            <th>Large</th>
+            <th>Extra Large</th>
+            <tr>
+                <td>12"</td>
+                <td>14"</td>
+                <td>16"</td>
+                <td>18"</td>
+            </tr>
+            <tr>
+                <td>Slices: 6</td>
+                <td>Slices: 8</td>
+                <td>Slices: 10</td>
+                <td>Slices: 12</td>
+            </tr>
+            <tr>
+                <td>Servings: 1-2</td>
+                <td>Servings: 2-3</td>
+                <td>Servings: 3-4</td>
+                <td>Servings: 4-5</td>
+            </tr>
+        </table>
+        <section id="menu" class="menu">
+            <form action="" method="post">
+            <div class="box-container">
+
+                <div class="box">
+                <img src="pizzas/chicken.jpg" alt="chicken">
+                    <div class="name">Basic Chicken </div>
                     <div class="input-group"></div>
-                    <div><label for="chicken"> | </label></div>
                     <select name="chicken" id="chicken">
                         <option value="" selected>[ Select Size ]</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
-                        <option value="Extra Large">Extra Large</option>
+                        <option value="Small">Small - £5</option>
+                        <option value="Medium">Medium - £7.50 </option>
+                        <option value="Large">Large - £10 </option>
+                        <option value="Extra Large">Extra Large - £12.50 </option>
+                        <form action="" method="post">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </form>
                     </select>
                 </div>
 
-                <div class="cheesy">
-                    <img src="cheesycrust.jpg" alt="cheesy">
-                    <div class="columns">
-                        <div class="title">Crust 2 Cheesy</div>
+                <div class="box">
+                        <img src="pizzas/cheesycrust.jpg" alt="cheesy">
+                        <div class="name">Crust 2 Cheesy</div>
                         <div class="input-group"></div>
-                        <div><label for="cheesy"> | </label></div>
                         <select name="cheesy" id="cheesy">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
                     </div>
-                    <div class="avocado">
-                        <img src="avocado.jpg" alt="avocado">
-                        <div class="columns">
-                            <div class="title">Avocado Bravado</div>
-                            <div class="input-group"></div>
-                        <div><label for="avocado"> | </label></div>
-                        <select name="avocado" id="avocado">
+
+
+                    <div class="box">
+                        <img src="pizzas/avocado.jpg" alt="avacado">
+                        <div class="name">Affa Car Dough</div>
+                        <div class="input-group"></div>
+                        <select name="avocado" id="avacado">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="bacon">
-                        <img src="bacon.jpg" alt="bacon">
-                        <div class="columns">
-                            <div class="title">Bakin Chickin</div>
-                            <div class="input-group"></div>
-                        <div><label for="bacon"> | </label></div>
+
+                    <div class="box">
+                        <img src="pizzas/bacon.jpg" alt="bacon">
+                        <div class="name">Bacon Premium</div>
                         <select name="bacon" id="bacon">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="beef">
-                        <img src="beef.jpg" alt="beef">
-                        <div class="columns">
-                            <div class="title">Beefy Beefer</div>
-                            <div class="input-group"></div>
-                        <div><label for="beef"> | </label></div>
+
+                    <div class="box">
+                        <img src="pizzas/beef.jpg" alt="beef">
+                        <div class="name">Beefy Beefer</div>
                         <select name="beef" id="beef">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="flatbread">
-                        <img src="flatbread.jpg" alt="flatbread">
-                        <div class="columns">
-                            <div class="title">FlatBread</div>
-                            <div class="input-group"></div>
-                        <div><label for="flatbread"> | </label></div>
+
+                    <div class="box">
+                        <img src="pizzas/flatbread.jpg" alt="flatbread">
+                        <div class="name">Flatline</div>
                         <select name="flatbread" id="flatbread">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="jalapenos">
-                        <img src="jalapenos.jpg" alt="jalapenos">
-                        <div class="columns">
-                            <div class="title">Halla P. Nose</div>
-                            <div class="input-group"></div>
-                        <div><label for="jalapenos"> | </label></div>
+
+                    <div class="box">
+                        <img src="pizzas/jalapenos.jpg" alt="jalapenos">
+                        <div class="name">Halla P Knows</div>
                         <select name="jalapenos" id="jalapenos">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="magherita">
-                        <img src="magherita.jpg" alt="magherita">
-                        <div class="columns">
-                            <div class="title">Marga Rita</div>
-                            <div class="input-group"></div>
-                        <div><label for="magherita"> | </label></div>
+
+                    <div class="box">
+                        <img src="pizzas/magherita.jpg" alt="magherita">
+                        <div class="name">Marga Rita</div>
                         <select name="magherita" id="magherita">
                             <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                         </select>
-                        </div>
                     </div>
-                    <div class="meatfeast">
-                        <img src="meatfeast.jpg" alt="meatfeast">
-                        <div class="columns">
-                            <div class="title">Meat Feast</div>
-                            <div class="input-group"></div>
-                            <div><label for="meatfeast"> | </label></div>
-                            <select name="meatfeast" id="meatfeast">
-                            <option value="" selected>[ Select Size ]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="mushroom">
-                        <img src="mushroom.jpg" alt="mushroom">
-                        <div class="columns">
-                            <div class="title">Mushroom</div>
-                            <div class="input-group"></div>
-                            <div><label for="mushroom"> | </label></div>
-                            <option value="" selected>[Select Size]</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extralarge">Extra Large</option>
-                            
 
-                        </div>
+                    <div class="box">
+                        <img src="pizzas/meatfeast.jpg" alt="meatfeast">
+                        <div class="name">Meet Me For The Feast</div>
+                        <select name="meatfeast" id="meatfeast">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
                     </div>
-                    <div class="pepperoni">
-                        <img src="pepperoni.jpg" alt="pepperoni">
-                        <div class="columns">
-                            <div class="title">Peppa Roney</div>
-                        </div>
+
+                    <div class="box">
+                        <img src="pizzas/mushroom.jpg" alt="mushroom">
+                        <div class="name">Mushroom Squared</div>
+                        <select name="mushroom" id="mushroom">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
                     </div>
-                    <div class="pineapple">
-                        <img src="pineapple.jpg" alt="pineapple">
-                        <div class="columns">
-                            <div class="title">The Risk Taker</div>
-                        </div>
+
+                    <div class="box">
+                        <img src="pizzas/pepperoni.jpg" alt="pepperoni">
+                        <div class="name">Pepperoni</div>
+                        <select name="pepperoni" id="pepperoni">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
                     </div>
-                    <div class="spicy">
-                        <img src="spicy.jpg" alt="spicy">
-                        <div class="columns">
-                            <div class="title">Lava Mouth</div>
-                        </div>
+
+                    <div class="box">
+                        <img src="pizzas/pineapple.jpg" alt="pineapple">
+                        <div class="name">The Risk Taker</div>
+                        <select name="pineapple" id="pineapple">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
+                    </div> 
+                    
+                    <div class="box">
+                        <img src="pizzas/spicy.jpg" alt="spicy">
+                        <div class="name">Lava Mouth</div>
+                        <select name="spicy" id="spicy">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
                     </div>
-                    <div class="vegan">
-                        <img src="vegan.jpg" alt="vegan">
-                        <div class="columns">
-                            <div class="title">Planty Planty</div>
-                        </div>   
+
+                    <div class="box">
+                        <img src="pizzas/vegan.jpg" alt="vegan">
+                        <div class="name">Planty Planty</div>
+                        <select name="vegan" id="vegan">
+                            <option value="" selected>[ Select Size ]</option>
+                            <option value="small">Small - £5</option>
+                            <option value="medium">Medium - £7.50</option>
+                            <option value="large">Large - £10</option>
+                            <option value="extralarge">Extra Large - £12.50</option>
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </select>
+                    </form>
+                    </div>
+
     
-            </div>
-            <h1>We do have <a href="sides.html">sides</a> too, you know!</h1>
+           <h1>We do have <a href="sides.html">sides</a> too, you know!</h1>
             <h1>You want something <a href="desserts.html">sweet?</a> We got you!</h1>
             <h1>Oh, you think you're too cool to buy <a href="drinks.html">a drink</a> from us?</h1>
         </section>
@@ -208,8 +253,8 @@
     <nav>
         <ul>
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="order.html">Order</a></li>
             <li><a href="">Jobs</a></li>
         </ul>
     </nav>
